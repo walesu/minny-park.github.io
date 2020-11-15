@@ -5,7 +5,7 @@ node_js:
 cache: npm
 branches:
   only:
-    - main
+    - main #
 script:
   - hexo generate
 deploy:
