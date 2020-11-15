@@ -5,6 +5,7 @@ install:
 
 before_script:
   - npm install -g hexo-cli
+  - cd hexo
 
 script:
   - hexo g
