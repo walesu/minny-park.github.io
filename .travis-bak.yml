@@ -1,0 +1,28 @@
+# S: Build Lifecycle
+install:
+  - npm install
+
+
+before_script:
+  - npm install -g hexo-cli
+  - cd hexo
+
+script:
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "Minny Park"
+  - git config user.email "opensource@thenx.org"
+  - git add .
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" main:main
+# E: Build LifeCycle
+
+branches:
+  only:
+    - sources
+env:
+ global:
+   - GH_REF: github.com/minny-park/minny-park.github.io.git
