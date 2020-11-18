@@ -13,6 +13,7 @@ branches:
   only:
     - main
 script:
+  - hexo clean
   - hexo generate
 deploy:
   provider: pages
