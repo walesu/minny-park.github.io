@@ -4,11 +4,11 @@
 
 # Site
 title: Thenx
-subtitle: ''
-description: ''
+subtitle: '找个喜欢的人写个刺激的博客'
+description: '博客'
 keywords:
 author: Minny Park
-language: zh_CN
+language: zh-CN
 timezone: ''
 
 # URL
@@ -98,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: pure
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
