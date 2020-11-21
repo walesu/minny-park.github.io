@@ -86,11 +86,11 @@ donate:
   enable: true
   # 微信打赏
   wechatpay:
-    qrcode: /source/pay/wechatpayimg.png
+    qrcode: /images/pay/wechatpayimg.png
     title: 微信支付
   # 支付宝打赏
   alipay: 
-    qrcode: /source/pay/alipayimg.png 
+    qrcode: /images/pay/alipayimg.png 
     title: 支付宝
 
 # Share
