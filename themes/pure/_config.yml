@@ -228,8 +228,25 @@ profile:
   # My Personal Works
   works:
     name:
-      link: http://www.example.com
-      date: 2016
+      link: https://thenx.org
+      date: 2018
   # My Personal Projects
   projects:
     thenx-cms: https://github.com/thenx-projects
+
+# hexo-neat
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:  
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js'
