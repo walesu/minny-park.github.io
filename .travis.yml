@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - stable
 cache: npm
-before_install
+before_install:
   - npm install
 install:
   - npm install hexo-wordcount --save
