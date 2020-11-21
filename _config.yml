@@ -121,3 +121,11 @@ neat_js:
   compress:
   exclude:
     - '*.min.js'
+
+## feed   
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: thenx
