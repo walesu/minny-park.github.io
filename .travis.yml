@@ -3,13 +3,14 @@ language: node_js
 node_js:
   - stable
 cache: npm
-install:
+before_install
   - npm install
-  - npm install hexo-wordcount
-  - npm install hexo-generator-json-content
-  - npm install hexo-generator-feed
-  - npm install hexo-generator-sitemap
-  - npm install hexo-generator-baidu-sitemap
+install:
+  - npm install hexo-wordcount --save
+  - npm install hexo-generator-json-content --save
+  - npm install hexo-generator-feed --save
+  - npm install hexo-generator-sitemap --save
+  - npm install hexo-generator-baidu-sitemap --save
 branches:
   only:
     - main
