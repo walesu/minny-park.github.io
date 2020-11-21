@@ -128,7 +128,7 @@ feed:
   path: atom.xml
   limit: 20
   hub:
-  content: thenx
+  content: true
 
 ## sitemap
 sitemap:
