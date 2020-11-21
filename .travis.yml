@@ -5,15 +5,31 @@ node_js:
 cache: npm
 before_install:
   - npm install
+install:
+  - npm install hexo-wordcount --save
   - npm audit fix
   - npm audit fix --force
   - npm audit
-install:
-  - npm install hexo-wordcount --save
+
   - npm install hexo-generator-json-content --save
+  - npm audit fix
+  - npm audit fix --force
+  - npm audit
+
   - npm install hexo-generator-feed --save
+  - npm audit fix
+  - npm audit fix --force
+  - npm audit
+
   - npm install hexo-generator-sitemap --save
+  - npm audit fix
+  - npm audit fix --force
+  - npm audit
+
   - npm install hexo-generator-baidu-sitemap --save
+  - npm audit fix
+  - npm audit fix --force
+  - npm audit
 branches:
   only:
     - main
