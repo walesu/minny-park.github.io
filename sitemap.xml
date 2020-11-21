@@ -8,6 +8,13 @@
     
   </url>
   
+  <url>
+    <loc>https://thenx.org/2020/11/21/testify/</loc>
+    
+    <lastmod>2020-11-21</lastmod>
+    
+  </url>
+  
 
   <url>
     <loc>https://thenx.org/</loc>
@@ -24,10 +31,24 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://thenx.org/tags/test-and-testify/</loc>
+    <lastmod>2020-11-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
     <loc>https://thenx.org/categories/python/</loc>
+    <lastmod>2020-11-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thenx.org/categories/php/</loc>
     <lastmod>2020-11-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
