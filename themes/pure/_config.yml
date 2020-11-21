@@ -31,9 +31,9 @@ site:
     width: 40
     height: 40
     url: ../images/logo.png
-  title: Hexo # 页面title
+  title: Thenx # 页面title
   favicon: /favicon.png
-  board: <p>欢迎交流与分享经验!</p> # 站点公告
+  board: <p>thenx-projects:https://github.com/thenx-projects</p> # 站点公告
   copyright: false # 底部版权信息
 
 # config
