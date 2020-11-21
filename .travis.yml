@@ -4,7 +4,10 @@ node_js:
   - stable
 cache: npm
 before_install:
-  - npm install -i
+  - npm install
+  - npm audit fix
+  - npm audit fix --force
+  - npm audit
 install:
   - npm install hexo-wordcount --save
   - npm install hexo-generator-json-content --save
