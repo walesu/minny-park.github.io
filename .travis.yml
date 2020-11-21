@@ -5,6 +5,7 @@ node_js:
 cache: npm
 before_install:
   - npm install
+  - npm found
   - npm audit fix
 install:
   - npm install hexo-wordcount --save
