@@ -2,72 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://thenx.org/2020/11/21/hello-world/</loc>
+    <loc>https://thenx.org/2020/11/22/hello-world/</loc>
     
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://thenx.org/2020/11/21/testify/</loc>
+    <loc>https://thenx.org/2020/11/22/testify/</loc>
     
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     
   </url>
   
   <url>
     <loc>https://thenx.org/404.html</loc>
     
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     
   </url>
   
   <url>
     <loc>https://thenx.org/about/index.html</loc>
     
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     
   </url>
   
   <url>
     <loc>https://thenx.org/books/index.html</loc>
     
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     
   </url>
   
   <url>
     <loc>https://thenx.org/categories/index.html</loc>
     
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     
   </url>
   
   <url>
     <loc>https://thenx.org/links/index.html</loc>
     
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     
   </url>
   
   <url>
     <loc>https://thenx.org/repository/index.html</loc>
     
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     
   </url>
   
   <url>
     <loc>https://thenx.org/tags/index.html</loc>
     
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     
   </url>
   
 
   <url>
     <loc>https://thenx.org/</loc>
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,14 +75,14 @@
   
   <url>
     <loc>https://thenx.org/tags/%E6%A0%87%E7%AD%BE/</loc>
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://thenx.org/tags/test-and-testify/</loc>
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -91,21 +91,21 @@
   
   <url>
     <loc>https://thenx.org/categories/python/</loc>
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://thenx.org/categories/php/</loc>
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://thenx.org/categories/python/test/</loc>
-    <lastmod>2020-11-21</lastmod>
+    <lastmod>2020-11-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
