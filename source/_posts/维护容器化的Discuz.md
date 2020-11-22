@@ -1,17 +1,21 @@
-```
 ---
 title: 维护容器化的Discuz
 tag:
   - Disucz
+
   - Docker
+
   - PHP
+
 categories:
+
   - Discuz
+
   - Docker
+
   - PHP
 toc: true
 ---
-```
 
 基于腾讯官方 Discuz 及官方代码仓库 [Discuz X](https://gitee.com/ComsenzDiscuz/DiscuzX) 中的最新分支  [Discuz X3.5](https://gitee.com/ComsenzDiscuz/DiscuzX/tree/v3.5/) 来构建 Docker镜像。
 可通过如下指令在终端中执行即可下载镜像<!-- more -->
