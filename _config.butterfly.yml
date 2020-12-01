@@ -631,7 +631,7 @@ aside:
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: true
+    color: false
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -654,7 +654,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: false
-  publish_date: 1/12/2020 00:00:00
+  publish_date:
 
 # Aside widget - Newest Comments
 newest_comments:
