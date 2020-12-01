@@ -10,6 +10,7 @@ install:
   - npm install hexo-generator-sitemap --save
   - npm install hexo-generator-baidu-sitemap --save
   - npm install hexo-neat --save
+  - npm install hexo-abbrlink --save
   - npm audit
 branches:
   only:
