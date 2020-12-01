@@ -1,6 +1,6 @@
 footer:
-  framework: WebSite
-  theme: 项目地址
+  framework: 框架
+  theme: 主题
 
 copy:
   success: 复制成功
