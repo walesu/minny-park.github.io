@@ -185,11 +185,11 @@ reward:
   enable: true
   QR_code:
     - img: /img/wechat.jpg
-       link:
-       text: wechat
+      link:
+      text: 微信
     - img: /img/alipay.jpg
-       link:
-       text: alipay
+      link:
+      text: 支付宝
 
 # Related Articles
 related_post:
