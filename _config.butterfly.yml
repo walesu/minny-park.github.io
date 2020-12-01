@@ -619,7 +619,7 @@ aside:
       link: https://github.com/thenx-projects
   card_announcement:
     enable: true
-    content: Github: https://github.com/thenx-projects
+    content: 为什么不找个喜欢的人一起写点刺激的博客
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
