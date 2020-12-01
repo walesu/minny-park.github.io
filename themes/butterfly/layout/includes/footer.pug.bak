@@ -9,10 +9,10 @@
   if theme.footer.copyright
     .framework-info
       span= _p('footer.framework') + ' '
-      a(href='https://thenx.org')= 'Thenx'
+      a(href='https://hexo.io')= 'Hexo'
       span.footer-separator |
       span= _p('footer.theme') + ' '
-      a(href='https://github.com/thenx-projects')= 'Thenx Projects'
+      a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
   if theme.footer.custom_text
     .footer_custom_text!=`${theme.footer.custom_text}`
   if theme.footer.ICP.enable
