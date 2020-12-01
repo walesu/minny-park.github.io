@@ -2,34 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://thenx.org/categories/index.html</loc>
-    
-    <lastmod>2020-12-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://thenx.org/links/index.html</loc>
-    
-    <lastmod>2020-12-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://thenx.org/repository/index.html</loc>
-    
-    <lastmod>2020-12-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://thenx.org/tags/index.html</loc>
-    
-    <lastmod>2020-12-01</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://thenx.org/post/9c809629.html</loc>
     
     <lastmod>2020-12-01</lastmod>
@@ -52,6 +24,34 @@
   
   <url>
     <loc>https://thenx.org/books/index.html</loc>
+    
+    <lastmod>2020-12-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://thenx.org/categories/index.html</loc>
+    
+    <lastmod>2020-12-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://thenx.org/links/index.html</loc>
+    
+    <lastmod>2020-12-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://thenx.org/repository/index.html</loc>
+    
+    <lastmod>2020-12-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://thenx.org/tags/index.html</loc>
     
     <lastmod>2020-12-01</lastmod>
     
