@@ -9,13 +9,6 @@
   </url>
   
   <url>
-    <loc>https://thenx.org/404.html</loc>
-    
-    <lastmod>2020-12-02</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://thenx.org/about/index.html</loc>
     
     <lastmod>2020-12-02</lastmod>
@@ -38,6 +31,13 @@
   
   <url>
     <loc>https://thenx.org/links/index.html</loc>
+    
+    <lastmod>2020-12-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://thenx.org/404.html</loc>
     
     <lastmod>2020-12-02</lastmod>
     
