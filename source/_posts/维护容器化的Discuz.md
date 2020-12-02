@@ -36,7 +36,7 @@ $ docker pull tencentci/discuz
 ```
 
 ### 附：如果你想基于当前这个Dockerfile构建一个属于自己的镜像，我们推荐中国大陆用户在Dockerfile同目录下创建一个sources.list（即Debian的包管理源地址），并追加如下源：
-```
+```shell
 deb http://mirrors.163.com/debian/ stretch main non-free contrib
 deb http://mirrors.163.com/debian/ stretch-updates main non-free contrib
 deb http://mirrors.163.com/debian/ stretch-backports main non-free contrib
@@ -47,7 +47,7 @@ deb http://mirrors.163.com/debian-security/ stretch/updates main non-free contri
 deb-src http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib
 ```
 保存后我们可以在Dockerfile中添加如下指令：
-```
+```shell
 ADD sources.list /etc/apt/
 ```
 ------
@@ -76,7 +76,7 @@ ADD sources.list /etc/apt/
 
 在配置文件中，引入了一个新的相关配置项，这个配置项要正确设置。尤其对于升级用户，否则会导致发帖功能不正常。
 
-```
+```shell
 /*
  * 数据库引擎，根据自己的数据库引擎进行设置，3.5之后默认为innodb，之前为myisam
  * 对于从3.4升级到3.5，并且没有转换数据库引擎的用户，在此设置为myisam
@@ -100,7 +100,7 @@ $_config['db']['common']['engine'] = 'innodb';
 
 系统现在支持多个地址库，通过配置文件中的以下配置项进行选择：
 
-```
+```shell
 $_config['ipdb']['setting']['fullstack'] = '';	// 系统使用的全栈IP库，优先级最高
 $_config['ipdb']['setting']['default'] = '';	// 系统使用的默认IP库，优先级最低
 $_config['ipdb']['setting']['ipv4'] = 'tiny';	// 系统使用的默认IPv4库，留空为使用默认库
@@ -109,7 +109,7 @@ $_config['ipdb']['setting']['ipv6'] = 'v6wry'; // 系统使用的默认IPv6库�
 
 地址库对应的class为 `ip_<地址库名称>` ，位于 `source/class/ip` 下面。系统会根据配置自动加载相应的class，相应的class也可以有自己的配置项，其规则为：
 
-```
+```shell
  * $_config['ipdb']下除setting外均可用作自定义扩展IP库设置选项，也欢迎大家PR自己的扩展IP库。
  * 扩展IP库的设置，请使用格式：
  * 		$_config['ipdb']['扩展ip库名称']['设置项名称'] = '值';
@@ -125,7 +125,7 @@ $_config['ipdb']['setting']['ipv6'] = 'v6wry'; // 系统使用的默认IPv6库�
 
 IP封禁的配置，现在保存在pre_common_banned表中，**每次**用户访问的时候，都会触发检查。现在的检查效率较高，每次只会产生一个带索引的SQL查询（基于VARBINARY类型的大小比较）。对于一般的站点性能不会带来问题。另外可以启用Redis缓存，来进一步提高性能。另外还有一个配置项可关闭此功能，使用外部的防火墙等来进行IP封禁管理：
 
-```
+```shell
 $_config['security']['useipban'] = 1; // 是否开启允许/禁止IP功能，高负载站点可以将此功能疏解至HTTP Server/CDN/SLB/WAF上，降低服务器压力
 ```
 
@@ -133,7 +133,7 @@ $_config['security']['useipban'] = 1; // 是否开启允许/禁止IP功能，高
 
 IP地址获取，现在默认只信任REMOTE_ADDR，其它的因为太容易仿造，默认禁止。获取的方式也可以扩展，在配置文件中增加了以下配置项
 
-```
+```shell
 /**
  * IP获取扩展
  * 考虑到不同的CDN服务供应商提供的判断CDN源IP的策略不同，您可以定义自己服务供应商的IP获取扩展。
