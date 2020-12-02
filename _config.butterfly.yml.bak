@@ -102,7 +102,9 @@ tag_img:
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img: https://thenx.org/img/tl1.png
+tag_per_img:
+  aplayer: https://thenx.org/img/tl1.png
+  android: tl1.png
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
