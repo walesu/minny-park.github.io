@@ -33,7 +33,7 @@ toc: true
 $ docker pull tencentci/discuz
 ```
 
-#### 附：如果你想基于当前这个Dockerfile构建一个属于自己的镜像，我们推荐中国大陆用户在Dockerfile同目录下创建一个sources.list（即Debian的包管理源地址），并追加如下源：
+**附：如果你想基于当前这个Dockerfile构建一个属于自己的镜像，我们推荐中国大陆用户在Dockerfile同目录下创建一个sources.list（即Debian的包管理源地址），并追加如下源：**
 
 ```shell
 deb http://mirrors.163.com/debian/ stretch main non-free contrib
@@ -51,7 +51,53 @@ ADD sources.list /etc/apt/
 ```
 ------
 
-### 二、最新Discuz X3.5+说明
+### 二、容器的使用
+
+我们只需要通过 `docker run` 便可创建 `discuz`容器项目。容器的创建分为SSL和非SSL，但由于国际惯例以SSL为标准，所以这里我们也以SSL为例。
+
+#### 2.1. 目录的创建
+
+之前在当前目录（如 `/var/www` ）下创建 `html` 、`conf`、`ssl` 这3个目录。以便存放容器内的映射文件，便于后续配置文件的动态修改。
+
+#### 2.2. 启动命令
+
+`docker run`命令如下：
+
+```shell
+docker run -it --name discuz -p 80:80 -p 443:443 -p 465:465 \
+-v $PWD/html:/var/www/html \
+-v $PWD/conf/000-default.conf:/etc/apache2/sites-available/000-default.conf \
+-v $PWD/conf/000-default.conf:/etc/apache2/sites-enabled/000-default.conf \
+-v $PWD/ssl:/var/www/ssl \
+-v $PWD/conf/default-ssl.conf:/etc/apache2/sites-available/default-ssl.conf \
+-v $PWD/conf/default-ssl.conf:/etc/apache2/sites-enabled/001-ssl.conf \
+-d tencentci/discuz
+```
+
+其中 `80` 为默认端口、`443` 为SSL所需端口、`465` 为邮件端口。
+
+#### 2.3. 配置SSL
+
+我们需要修改 `apache` 的SSL配置，并且需要添证书，证书可直接在腾讯云、阿里云申请免费证书即可。
+
+##### 2.3.1. SSL配置文件的添加
+
+......文章编写中。
+
+
+
+#### 2.4. 开启容器支持SSL
+
+默认并没有开启SSL功能，需要进入容器执行如下命令：
+
+```shell
+$ a2enmod ssl
+```
+
+执行完成后可直接重启容器即可生效。
+
+### 三、最新Discuz X3.5+说明
+
 相对于3.4版本，做了以下修改：
 
 #### 1. 数据库相关变更
