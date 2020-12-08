@@ -82,6 +82,38 @@ docker run -it --name discuz -p 80:80 -p 443:443 -p 465:465 \
 
 ##### 2.3.1. SSL配置文件的添加
 
+编辑default-ssl.conf:
+
+```shell
+<IfModule mod_ssl.c>
+        <VirtualHost 0.0.0.0:443>
+                ServerAdmin webmaster@localhost
+
+                DocumentRoot /var/www/html
+
+                ServerName white-hairs.com
+
+                ErrorLog ${APACHE_LOG_DIR}/error.log
+                CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+                SSLEngine on
+
+                SSLCertificateFile /var/www/ssl/2_www.white-hairs.com.crt 
+                SSLCertificateKeyFile /var/www/ssl/3_www.white-hairs.com.key 
+                SSLCertificateChainFile /var/www/ssl/1_root_bundle.crt 
+
+                <FilesMatch "\.(cgi|shtml|phtml|php)$">
+                SSLOptions +StdEnvVars
+                </FilesMatch>
+                <Directory /usr/lib/cgi-bin>
+                SSLOptions +StdEnvVars
+                </Directory>
+
+
+        </VirtualHost>
+</IfModule>
+```
+
 ......文章编写中。
 
 
