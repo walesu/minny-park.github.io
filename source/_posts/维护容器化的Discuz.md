@@ -78,11 +78,25 @@ docker run -it --name discuz -p 80:80 -p 443:443 -p 465:465 \
 
 #### 2.3. 配置SSL
 
-我们需要修改 `apache` 的SSL配置，并且需要添证书，证书可直接在腾讯云、阿里云申请免费证书即可。
+我们需要修改 `apache` 的SSL配置，并且需要添证书，证书可直接在腾讯云、阿里云申请免费证书即可。与此同时，需要在 `/var` 根目录下创建 `www` 文件夹，并在 `www` 文件夹中依次创建 `conf` 、`html` 、`ssl` 3个目录。
 
-##### 2.3.1. SSL配置文件的添加
+- conf目录：存放 ssl-apache配置；
+- html目录：存放Discuz程序文件；
+- ssl目录  ：存放SSL文件目录。
 
-编辑default-ssl.conf:
+##### 2.3.1. 开启容器中Apache SSL支持
+
+在容器中直接执行如下指令即可开启SSL支持：
+
+```shell
+$ a2enmod ssl
+```
+
+##### 2.3.2. SSL配置文件的添加
+
+###### 2.3.2.1. default-ssl.conf 配置
+
+在 `/var/www/conf` 目录下创建并编辑 `default-ssl.conf` :
 
 ```shell
 <IfModule mod_ssl.c>
@@ -114,19 +128,50 @@ docker run -it --name discuz -p 80:80 -p 443:443 -p 465:465 \
 </IfModule>
 ```
 
-......文章编写中。
+##### 2.3.2.2. 000-default.conf 配置
 
-
-
-#### 2.4. 开启容器支持SSL
-
-默认并没有开启SSL功能，需要进入容器执行如下命令：
+在 `/var/www/conf` 下创建并编辑 `000-default.conf` 配置：
 
 ```shell
-$ a2enmod ssl
+<VirtualHost *:80>
+        # The ServerName directive sets the request scheme, hostname and port that
+        # the server uses to identify itself. This is used when creating
+        # redirection URLs. In the context of virtual hosts, the ServerName
+        # specifies what hostname must appear in the request's Host: header to
+        # match this virtual host. For the default virtual host (this file) this
+        # value is not decisive as it is used as a last resort host regardless.
+        # However, you must set it for any further virtual host explicitly.
+        ServerName white-hairs.com
+        Redirect 301 / https://white-hairs.com/
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
+
+        # Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
+        # error, crit, alert, emerg.
+        # It is also possible to configure the loglevel for particular
+        # modules, e.g.
+        #LogLevel info ssl:warn
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+        # For most configuration files from conf-available/, which are
+        # enabled or disabled at a global level, it is possible to
+        # include a line for only one particular virtual host. For example the
+        # following line enables the CGI configuration for this host only
+        # after it has been globally disabled with "a2disconf".
+        #Include conf-available/serve-cgi-bin.conf
+</VirtualHost>
+
 ```
 
-执行完成后可直接重启容器即可生效。
+#### 2.3.3. 导入相关 SSL 证书
+
+在 `/var/www/ssl` 目录中放入在腾讯云或者阿里云下载的SSL证书并将名称及后缀对应如上章节的位置即可。
+
+#### 2.3.4. Discuz目录
+
+可执行下载Disucz对应版本放入 `var/www/html` 目录中。注：需要存放的是 `upload` 下的文件。
 
 ### 三、最新Discuz X3.5+说明
 
