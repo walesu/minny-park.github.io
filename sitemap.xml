@@ -2,72 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://thenx.org/post/9c809629.html</loc>
-    
-    <lastmod>2021-01-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://thenx.org/404.html</loc>
-    
-    <lastmod>2021-01-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://thenx.org/about/index.html</loc>
-    
-    <lastmod>2021-01-17</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://thenx.org/archives/index.html</loc>
     
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-02-09</lastmod>
     
   </url>
   
   <url>
     <loc>https://thenx.org/books/index.html</loc>
     
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-02-09</lastmod>
     
   </url>
   
   <url>
     <loc>https://thenx.org/categories/index.html</loc>
     
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-02-09</lastmod>
     
   </url>
   
   <url>
     <loc>https://thenx.org/links/index.html</loc>
     
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-02-09</lastmod>
     
   </url>
   
   <url>
     <loc>https://thenx.org/repository/index.html</loc>
     
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-02-09</lastmod>
     
   </url>
   
   <url>
     <loc>https://thenx.org/tags/index.html</loc>
     
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-02-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://thenx.org/post/9c809629.html</loc>
+    
+    <lastmod>2021-02-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://thenx.org/404.html</loc>
+    
+    <lastmod>2021-02-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://thenx.org/about/index.html</loc>
+    
+    <lastmod>2021-02-09</lastmod>
     
   </url>
   
 
   <url>
     <loc>https://thenx.org/</loc>
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,21 +75,21 @@
   
   <url>
     <loc>https://thenx.org/tags/Disucz/</loc>
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://thenx.org/tags/Docker/</loc>
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://thenx.org/tags/PHP/</loc>
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -98,21 +98,21 @@
   
   <url>
     <loc>https://thenx.org/categories/Discuz/</loc>
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://thenx.org/categories/Discuz/Docker/</loc>
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://thenx.org/categories/Discuz/Docker/PHP/</loc>
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
